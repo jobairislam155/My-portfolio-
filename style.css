@@ -1,0 +1,303 @@
+/* =========================
+   GLOBAL STYLE
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav ul li a {
+    transition: 0.3s ease;
+}
+
+
+nav ul li a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+#home {
+    background: linear-gradient(
+        135deg,
+        #f8fafc,
+        #e0f2fe
+    );
+}
+
+
+#home img {
+
+    animation: floating 3s ease-in-out infinite;
+
+}
+
+
+@keyframes floating {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+
+
+/* =========================
+   BUTTON STYLE
+========================= */
+
+a,
+button {
+
+    transition: all 0.3s ease;
+
+}
+
+
+button:hover,
+a:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* =========================
+   CARD DESIGN
+========================= */
+
+
+.bg-gray-100,
+.bg-white {
+
+    transition: 0.3s ease;
+
+}
+
+
+
+.bg-gray-100:hover,
+.bg-white:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+
+/* =========================
+   SKILL BAR ANIMATION
+========================= */
+
+
+#skills div div div {
+
+    animation: skillAnimation 2s ease;
+
+}
+
+
+
+@keyframes skillAnimation {
+
+
+    from {
+
+        width: 0;
+
+    }
+
+
+    to {
+
+        width: inherit;
+
+    }
+
+}
+
+
+
+
+/* =========================
+   PROJECT IMAGE
+========================= */
+
+
+#projects img {
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+
+
+#projects img:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+
+input,
+textarea {
+
+    outline: none;
+
+    transition: 0.3s;
+
+}
+
+
+
+input:focus,
+textarea:focus {
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 8px rgba(37,99,235,0.3);
+
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+
+footer a {
+
+    color: #9ca3af;
+
+    transition: 0.3s;
+
+}
+
+
+footer a:hover {
+
+    color: white;
+
+}
+
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+
+@media(max-width:768px){
+
+
+    h1 {
+
+        font-size: 40px !important;
+
+    }
+
+
+
+    h2 {
+
+        font-size: 28px !important;
+
+    }
+
+
+
+    nav {
+
+        padding: 15px;
+
+    }
+
+
+
+    #home {
+
+        text-align: center;
+
+    }
+
+
+
+    #home img {
+
+        width: 250px;
+
+    }
+
+
+
+}
+
+
+
+/* =========================
+   CUSTOM SCROLLBAR
+========================= */
+
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+
+::-webkit-scrollbar-track {
+
+    background: #f1f1f1;
+
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background: #2563eb;
+
+    border-radius: 10px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: #1d4ed8;
+
+}
