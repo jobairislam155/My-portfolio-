@@ -145,3 +145,8 @@ emailjs.sendForm(
     "template_bf9dxvo",
     this
 );
+console.log("JavaScript is working");
+alert("JavaScript is working!");
+function test(){
+    alert("Button works!");
+}
